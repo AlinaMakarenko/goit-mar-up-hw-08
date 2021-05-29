@@ -1218,8 +1218,7 @@ address {
   width: 200px;
   height: 50px;
   padding: 10px 28px;
-  font-family: Roboto;
-  font-style: normal;
+  font-family: 'Roboto',sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -1239,4 +1238,59 @@ address {
 .line__icon {
   fill: currentColor;
 }
+.mobile-header{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 83px 48px 40px;
+    background-color: var( --main-light);
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    transition: 250ms;
+}
+.mobile-header__list{
+  margin-bottom: 302px;
+}
+.mobile-header__item{
+  margin-bottom: 32px;
+}
+.mobile-header__link{
+  color: var(--main-color);
+}
+.mobile-contact__list{
+  margin-bottom: 64px;
+}
+.mobile-contact__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mobile-contact__link-tel{
+  text-decoration: none;
+    font-size: 34px;
+    color: var(--scroll-text);
+}
+.mobile-contact__link-mail{
+  text-decoration: none;
+    font-size: 24px;
+    color: var(--scroll-text);
+    padding: 0px;
+}
+.mobile-socials__list{
+  display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.mobile-socials__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33,33,33,0.2);
+}
+
+
 /*# sourceMappingURL=main.css.map */

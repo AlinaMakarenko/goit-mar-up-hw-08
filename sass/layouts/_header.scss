@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    width: 100%;
+    background-color: var(--main-light);
+    border-bottom: 1px solid var(--border-header);
+    @media screen and (max-width: 767.98px)
+{
+    position: relative;
+    height: 60px;
+    top: 0;
+}
+@media screen and (min-width: 768px)
+{
+    height: 80px;
+}
+@media screen and (min-width: 1200px)
+{
+    z-index: 10;
+    position: fixed;
+}
+}

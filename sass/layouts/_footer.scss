@@ -1,9 +1,10 @@
 .footer {
   display: flex;
   background-color: var(--head-footer-background);
-  padding-top: 66px;
-  padding-bottom: 64px;
+  padding-top: 60px;
+    padding-bottom: 60px;
   align-items: baseline;
+
 }
 
 .footer__item {
@@ -31,11 +32,76 @@
   padding-left: 0px;
 
 }
+.footer__part1{
+@media screen and (max-width: 767.98px)
+{
+    width: 100%;
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px)
+{
+    text-align: center;
+}
+
+}
+
 
 .mail{
     margin-left: 93px;
+
+    @media screen and (min-width: 320px) and (max-width: 479.98px)
+{
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 678px) and (max-width: 1199.98px)
+{
+    margin-top: 60px;
+}
   }
   .wrap{
     display: flex;
-    
+    @media screen and (max-width: 1199.98px)
+{
+    display: block;
+}
   }
+  .line{
+    margin-right: 12px;
+    @media screen and (max-width: 1199.98px)
+ {
+    margin-right: 0;
+}
+  }
+  .line__input{
+outline: none;
+    padding: 15px;
+    width: 358px;
+    height: 50px;
+    font-family: 'Roboto',sans-serif ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: var(--main-light-op-60);
+    background-color: var(--head-footer-background);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border var(--btn-sh-duration) var(--timing-function);
+
+    @media screen and (max-width: 1199.98px)
+{
+    width: 100%;
+}
+
+&:hover,
+ &:focus {
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    outline: none;
+}
+
+}

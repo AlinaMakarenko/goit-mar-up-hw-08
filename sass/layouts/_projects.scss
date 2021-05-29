@@ -1,15 +1,31 @@
 .projects__list{
-  display:flex;
-  margin: 0px;
-  margin-bottom: 50px;
-  padding-left: 0px;
   justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0px;
+@media screen and (max-width: 767.98px)
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
 }
-.projects__list li{
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199.98px)
+ {
+    margin-bottom: 30px;
+}
+
+}
+.projects__button{
   margin-left: 8px;
+
+  @media screen and (max-width: 767.98px)
+{
+    margin-bottom: 15px;
+}
   
 }
+
 
 .project__text, .project-last__text {
   font-family: 'Roboto',sans-serif ;
@@ -33,9 +49,14 @@ margin-top: 30px;
 }
 
 .project{
-border: 1px solid var(--border-header);
 padding: 20px 24px;
-text-align: left;
+    border: 1px solid var(--card-border);
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px)
+{
+    padding-bottom: 56px;
+}
+
 }
 .project-last{
   border: 1px solid var(--border-header);

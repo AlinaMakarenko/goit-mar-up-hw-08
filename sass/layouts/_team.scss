@@ -43,6 +43,19 @@ background-color: var(--team-background);
     background-color: var(--main-light);
     margin-right: 30px;
     border-radius: 4px;
+
+    @media screen and (max-width: 767.98px)
+{
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px)
+{
+    margin-right: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% / 2) - 30px);
+}
 }
 
 
@@ -60,13 +73,20 @@ background-color: var(--team-background);
   margin-bottom: 10px;
   text-align: center;
 justify-content: center;
+
 }
 
 
 
  .team__name-vocation{
-   padding-top: 33px;
-   padding-bottom: 33px;
+   padding-top: 24px;
+   padding-bottom: 24px;
+
+   @media screen and (min-width: 1200px)
+ {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
  }
 
   .team__vocation{

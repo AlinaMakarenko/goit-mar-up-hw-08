@@ -1,13 +1,27 @@
 .clients{
-display: flex;
-padding-top: 100px;
-padding-bottom: 94px;
+max-width: 1200px;
+    padding-top: 99px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1199.98px)
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
   }
  
   .clients__list{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
+   display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1199.98px)
+{
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
   }
   
   
@@ -19,9 +33,22 @@ padding-bottom: 94px;
     fill: var(--icon-color);
     border: 1px solid var(--icon-color);
     justify-content: center;
-    margin-right: 30px;
-    &:last-child{
-    margin-right: 0px;
+  
+  @media screen and (max-width: 767.98px)
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+    flex-basis: calc((100% / 2) - 30px);
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px)
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+    flex-basis: calc((100% / 3) - 30px);
+}
+
   }
   &:hover,
   &:focus{
@@ -30,7 +57,7 @@ padding-bottom: 94px;
     
   }
   .clients__link{
-    width: 170px;
+    
     height: 90px;
     display: flex;
     align-items: center;
@@ -39,6 +66,11 @@ padding-bottom: 94px;
     transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition: background-color 250ms;
+
+@media screen and (max-width: 1199.98px)
+{
+    width: 100%;
+}
   }
   
   

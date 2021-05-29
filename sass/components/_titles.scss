@@ -8,11 +8,15 @@
   letter-spacing: 0.06em;
   }
 .head__title{
-  display: block;
-  align-items: center;
- text-align: center;
- justify-content: center;
- margin: 0px;
+  max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    @media screen and (max-width: 1200px)
+{
+    max-width: 360px;
+    font-size: 26px;
+}
 }
 .scroll__title {
 font-family: 'Roboto',sans-serif ;
@@ -22,6 +26,12 @@ font-family: 'Roboto',sans-serif ;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767.98px)
+{
+    text-align: center;
+}
 }
 .container-heading__title{
   font-family: 'Roboto',sans-serif ;
@@ -30,6 +40,7 @@ font-family: 'Roboto',sans-serif ;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  
   }
   .container-heading__title{
   display: flex;
@@ -39,7 +50,7 @@ font-family: 'Roboto',sans-serif ;
    margin: auto;
    margin-bottom: 59px;
 }
-.team__title, .clients__title{
+.team__title{
   color: var(--black-text);
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -55,6 +66,24 @@ text-align: center;
 {
     font-size: 36px;
     margin-bottom: 50px;
+}
+}
+
+.clients__title{
+  color: var(--black-text);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+ align-items: center;
+margin-top: 0px;
+ margin-bottom: 30px;
+text-align: center;
+@media screen and (max-width: 1199.98px)
+{
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 }
 .project__title, .project-last__title{
@@ -79,6 +108,11 @@ margin-top: 0px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     display: inline-block;
+
+    @media screen and (max-width: 767.98px)
+{
+    text-align: center;
+}
 }
 .modal__title{
   color: var(--corporation-color);
@@ -90,4 +124,11 @@ margin-top: 0px;
     text-align: center;
     margin-bottom: 12px;
     margin-top: 0px;
+
+    @media screen and (max-width: 1199.98px)
+{
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
 }

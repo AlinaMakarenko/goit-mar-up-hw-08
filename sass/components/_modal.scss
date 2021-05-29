@@ -28,10 +28,26 @@
   transition: transform 250ms var(--cubic-bezier);
   box-shadow: var(--shadow);
   padding: 40px;
+
+  @media screen and (max-width: 1199.98px)
+{
+    max-width: 450px;
+    max-height: 609px;
+}
 }
 .modal__form{
-   display: flex;
+  
     flex-direction: column;
+    width: 448px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1199.98px)
+ {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 .comment{
   display: flex;
@@ -48,7 +64,10 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    
+    @media screen and (max-width: 1199.98px)
+ {
+    font-size: 12px;
+}
 }
 .comment__input{
   font-size: 12px;
@@ -127,34 +146,8 @@ border-radius: 4px;
       border: 2px solid rgba(33, 33, 33, 0);
     }
 
-.line{
-    margin-right: 12px;
-  }
-.line__input{
-outline: none;
-    padding: 15px;
-    width: 358px;
-    height: 50px;
-    font-family: 'Roboto',sans-serif ;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: var(--main-light-op-60);
-    background-color: var(--head-footer-background);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    transition: border var(--btn-sh-duration) var(--timing-function);
 
-&:hover,
- &:focus {
-    border: 1px solid var(--main-color);
-    cursor: pointer;
-    outline: none;
-}
-}
+
 .filed{
   position: relative;
     display: flex;
